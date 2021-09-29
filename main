@@ -1,0 +1,33 @@
+package ru.vsu.cs.baturin_v_a;
+import java.util.Locale;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Введите число x = ");
+        double x = readX()
+    }
+
+    private static double readX() {
+        Scanner sc = new Scanner(System.in);
+
+        double x;
+        return  x = sc.nextDouble();
+    }
+
+    private static int readN() {
+        Scanner sc = new Scanner(System.in);
+
+        int n;
+        return n = sc.nextInt();
+    }
+
+    private static double countSol(double x, int n) {
+        double a = 1;
+
+        for (int i = 1; i <= n; i++) {
+            a = a * ((x - 2 * i) / (x - 2 * i - 1));
+        }
+
+        return a;
+    }
+}
