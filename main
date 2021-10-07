@@ -1,5 +1,6 @@
-//Даны целые положительные числа N и K. Найти сумму 1K + 2K + … + NK.
-// Чтобы избежать целочисленного переполнения, вычислять слагаемые этой суммы с помощью вещественной переменной и выводить результат как вещественное число.
+//Даны целые положительные числа N и K. Найти сумму 1^K + 2^K + … + N^K.
+//Чтобы избежать целочисленного переполнения, вычислять слагаемые этой суммы с помощью вещественной переменной
+//и выводить результат как вещественное число.
 package ru.vsu.cs.baturin_v_a;
 import java.util.Locale;
 import java.util.Scanner;
@@ -8,7 +9,7 @@ public class Main {
         Locale.setDefault(Locale.ROOT);
 
         System.out.print("Введите число n = ");
-        double n = readVar();
+        int n = readVar();
 
         System.out.print("Введите число k = ");
         int k = readVar();
@@ -22,7 +23,7 @@ public class Main {
         int k;
         return  k = sc.nextInt();
     }
-    
+
     private static double calcSol(double n, int k) {
         double a = 0;
 
@@ -33,3 +34,4 @@ public class Main {
         return a;
     }
 }
+
